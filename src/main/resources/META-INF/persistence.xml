@@ -9,8 +9,8 @@
             
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ecommerce_iftm?useTimezone=true&amp;serverTimezone=UTC"/>
-            <property name="javax.persistence.jdbc.user" value="danilo"/>
-            <property name="javax.persistence.jdbc.password" value="danilo"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
             
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
             <!-- Configurações Hibernate LOG -->

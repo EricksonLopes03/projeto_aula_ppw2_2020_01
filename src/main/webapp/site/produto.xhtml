@@ -7,20 +7,20 @@
              template="template-site.xhtml">
 
     <div class="container">
+        <h1 class="mt-4">#{detalhesProdutoBean.produto.nome} - Valor: R$#{detalhesProdutoBean.produto.valor}</h1>
+            <div class="mt-5"></div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h:graphicImage library="site" name="imagens/produto_offpic.png" styleClass="img-fluid"></h:graphicImage>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h:outputText escape="false" value="#{detalhesProdutoBean.produto.descricao}"></h:outputText>
+                    <br/><br/><br/>
+                    <h:outputText escape="false" value="#{detalhesProdutoBean.produto.detalhes}"></h:outputText>
+                    <a class="btn btn-block btn-success" href="#{request.contextPath}/site/carrinho.xhtml"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</a>
+                </div>
 
-        <h1 class="mt-4">Geladeira 550 Litros - Gelamais</h1>
-        <div class="mt-5"></div>
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h:graphicImage library="site" name="imagens/geladeira.jpg" styleClass="img-fluid"></h:graphicImage>
             </div>
-            <div class="col-sm-12 col-md-6">
-                <p>Geladeira 110v</p>
-                <a class="btn btn-block btn-success" href="#{request.contextPath}/site/carrinho.xhtml"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</a>
-            </div>
-            
-        </div>
-        
     </div>
 
 </ui:decorate>
